@@ -16,11 +16,26 @@ func main() {
 
 	var userName string
 	var userTicket int
+	var firstName string
+	var lastName string
+	var email string
 	//ask user for their name
+	fmt.Println("Enter your name:")
+	fmt.Scan(&userName)
+
+	fmt.Println("Enter your first name:")
+	fmt.Scan(&firstName)
+
+	fmt.Println("Enter your last name:")
+	fmt.Scan(&lastName)
+
+	fmt.Println("Enter your Email:")
+	fmt.Scan(&email)
+
 	fmt.Println("Enter your name:")
 	fmt.Scan(&userName)
 
 	userTicket = 2
 
-	fmt.Printf("USER %v BOOKED %v tickets.\n", userName, userTicket)
+	fmt.Printf("USER %v BOOKED %v tickets. %v first name; %v last name	; %v email", userName, userTicket, firstName, lastName, email)
 }
